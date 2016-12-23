@@ -33,7 +33,7 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to account_posts_path, notice: "Post updated"
     else
-      render :new
+      render :edit
     end
   end
 
